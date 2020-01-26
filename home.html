@@ -1,0 +1,10 @@
+{% extends "inherit_index.html" %}
+{% block content %}
+	<h1>Whether Site</h1>
+	{% for post in posts %}
+		<h1>{{post.country}}</h1>
+		<p>city: {{post.city}}</p>
+		<p>capital city: {{post.capital}}</p>
+		<p>temperature: {{post.temperature}} Celsius</p>
+	{%endfor%}
+{% endblock content %}
